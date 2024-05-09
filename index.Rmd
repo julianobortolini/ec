@@ -1,0 +1,26 @@
+---
+title: "Estatística Computacional"
+author: "Prof. Dr. Juliano Bortolini"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+*Bacharelado em Estatístida - UFMT*
+
+*Período letivo: 2024/1*
+
+# Avisos:
+
+-   Monitores: João Baptista e Georgiano
+
+## Ementa:
+
+Geração de realizações de variáveis aleatórias uniformes. Geração de realizações de variáveis aleatórias não-uniformes. Método de Monte Carlo. Métodos de reamostragem. Métodos de otimização numérica.
+
+### Livro texto:
+
+-   Maria L. Rizzo. **Statistical Computing with R** Chapman & Hall/CRC. 2019.
+
+### Livro complementar:
+
+-   Sheldon M. Ross. **Simulation** Academic Press. 2006.
