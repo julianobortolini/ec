@@ -1,7 +1,7 @@
 ---
 title: "Estatística Computacional"
 author: "Prof. Dr. Juliano Bortolini"
-date: "`r Sys.Date()`"
+date: ""
 output: html_document
 ---
 
@@ -9,11 +9,14 @@ output: html_document
 
 *Período letivo: 2024/1*
 
-# Avisos:
+### Avisos:
 
--   Monitores: João Baptista e Georgiano
+- Monitores: João Baptista e Georgiano
+- [Whatsapp da disciplina](https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu)
+- Última atualização do site: `r Sys.Date()`
 
-## Ementa:
+
+### Ementa:
 
 Geração de realizações de variáveis aleatórias uniformes. Geração de realizações de variáveis aleatórias não-uniformes. Método de Monte Carlo. Métodos de reamostragem. Métodos de otimização numérica.
 
