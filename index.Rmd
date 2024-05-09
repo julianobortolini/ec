@@ -13,7 +13,7 @@ output: html_document
 
 - Monitores: João Baptista e Georgiano
 - [Whatsapp da disciplina](https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu)
-- Última atualização do site: `r Sys.Date()`
+- Última atualização do site: `r format(Sys.time(), "%d-%m-%Y %H:%M:%S")`.
 
 
 ### Ementa:
