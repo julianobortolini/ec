@@ -41,8 +41,18 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
   - A1: geração de realizações de variáveis aleatórias.
   - A2: método de Monte Carlo, métodos de reamostragem e métodos de otimização numérica.
 
-O aluno que tiver a nota final, definida pela média aritmética das notas das 3 avaliações, maior ou igual a 5 estará aprovado. **Não há prova final.**
+O aluno que tiver a nota final, definida pela média aritmética das notas das 2 avaliações, maior ou igual a 5 estará aprovado. **Não há prova final.**
 
 Faltas superiores a 16 horas (equivalente a 4 aulas) implicam em reprovação por falta.
 
 Solicitações de segunda chamada para as provas serão avaliadas conforme o disposto no art. 80 da Res. Consepe nº 14/1999 e art. 8º da Res. Consepe nº 27/1999. Mais informações em: [https://ufmt.br/unidade/estudante/graduacao/pagina/requerimentos/188](https://ufmt.br/unidade/estudante/graduacao/pagina/requerimentos/188)
+
+
+----------
+<div style="text-align: center;">
+
+[@profjulianobortolini](https://instagram.com/profjulianobortolini) \  \  \ [www.julianobortolini.com.br](http://www.julianobortolini.com.br) \  \  \ [in/julianobortolini](https://linkedin.com/in/julianobortolini) \  \  \ [github.com/julianobortolini](https://github.com/julianobortolini)
+
+</div>
+
+
