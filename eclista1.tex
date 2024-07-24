@@ -1,0 +1,617 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Lista 1 - Estatística Computacional},
+  pdfauthor={Prof.~Juliano Bortolini},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Lista 1 - Estatística Computacional}
+\author{Prof.~Juliano Bortolini}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Usando o \emph{software} R, resolva as expressões numéricas:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    \(\frac{1}{2} + \frac{1}{3}\)
+  \item
+    \(\frac{4}{3} - \left(- \frac{2}{3} \right) + \frac{5}{2}\)
+  \item
+    \(4 - \left( - \frac{2}{3} + \frac{1}{4} - \frac{1}{8} \right) + \frac{1}{5}\)
+  \item
+    \(\left( - \frac{1}{2}\right)^2 \left( - \frac{1}{3}\right) + \left( \frac{1}{4}\right)^{-1}\)
+  \item
+    \(\frac{\sqrt{0,25 \cdot 0,04} + \sqrt[3]{0,01 \cdot 0,0001}}{\sqrt{0,32 \div 0,02} - \sqrt{0,5^4}}\)
+  \item
+    \(\frac{\left(\frac{1}{3}\right)^{-2}}{\left(\frac{2}{3}\right)^{-2} - \left(\frac{3}{2}\right)^{-2}}\)
+  \item
+    \(\frac{5^{-1}}{10^{-1} - 2^{-1}}\)
+  \item
+    \(\left(-\frac{1}{2} \right)^2 \left(-\frac{1}{3} \right) + \left(-\frac{2}{3} \right)^{-1} \div \left(-\frac{1}{3} \right)^{-2}\)
+  \item
+    \(\left( \frac{1}{3} + \frac{2}{5} - \frac{7}{2}\right) - \left( -\frac{1}{2} + \frac{1}{3} + \frac{5}{4}\right)\)
+  \item
+    \(\frac{1}{2} - \left[ \frac{5}{3} - \left( \frac{1}{4} + \frac{1}{3}\right) \right]\)
+  \item
+    \(\left[\left(\frac{1}{2} + \sqrt{2}\right)^{-2} + \frac{\pi^2}{\frac{\sqrt{3}}{1 + 0,333...}}\right] - \log_{10}(16 + 7,5^2)\)
+  \end{enumerate}
+\item
+  Execute os comandos \texttt{sqrt(16)}, \texttt{16\^{}0.5} e
+  \texttt{4\^{}3}.
+\item
+  Execute os comandos \texttt{log10(1000)}, \texttt{log(1000)},
+  \texttt{exp(log\ (1000))}. Então, tente o comando \texttt{log2(64)}.
+  Quais as diferenças entre as funções executadas?
+\item
+  Experimente o comando \texttt{?log}. Leia as primeiras linhas. O texto
+  corresponde às suas observações do exercício anterior?
+\item
+  Execute os comandos \texttt{pi}, \texttt{round(pi)},
+  \texttt{round(pi,\ digits\ =\ 4)} e \texttt{trunc(pi)}.
+\item
+  As funções seno e cosseno são implementadas em \texttt{sin} e
+  \texttt{cos}. Calcule \texttt{sin(pi)}, \texttt{cos(pi)},
+  \texttt{sin(pi/2)}, \texttt{cos(pi/2)}.
+\item
+  Execute os comandos a seguir e observe os resultados. Note que as
+  operações são realizadas elemento a elementos.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{  x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{8}\NormalTok{)}
+\NormalTok{  x}
+\NormalTok{  x}\SpecialCharTok{/}\DecValTok{2}
+\NormalTok{  x}\SpecialCharTok{\^{}}\DecValTok{2}
+  \FunctionTok{sqrt}\NormalTok{(x)}
+\NormalTok{  x[}\DecValTok{2}\NormalTok{]}
+\NormalTok{  x[}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{3}\NormalTok{)]}
+\NormalTok{  x[}\SpecialCharTok{{-}}\DecValTok{3}\NormalTok{]}
+\NormalTok{  y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{1}\NormalTok{)}
+\NormalTok{  y}
+\NormalTok{  x}\SpecialCharTok{{-}}\NormalTok{y}
+\NormalTok{  x}\SpecialCharTok{*}\NormalTok{y}
+\NormalTok{  x[y }\SpecialCharTok{\textgreater{}} \FloatTok{1.5}\NormalTok{]}
+\NormalTok{  y[x }\SpecialCharTok{==} \DecValTok{6}\NormalTok{]}
+  \DecValTok{4}\SpecialCharTok{:}\DecValTok{10}
+  \FunctionTok{seq}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{, }\AttributeTok{by =} \FloatTok{0.1}\NormalTok{)}
+  \FunctionTok{rep}\NormalTok{(x, }\AttributeTok{each =} \DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\item
+  Suponha que registramos a altura e o peso para quatro pessoas: alturas
+  em cm são 180, 165, 160, 193; pesos em kg são 87, 58, 65, 100. Faça
+  dois vetores, altura e peso, com os dados. O índice de massa corporal
+  (IMC) é definido como \[
+   \frac{peso \ (\text{em kg})}{altura^2 \ (\text{em m}) }
+  \] Faça um vetor com os valores do IMC para as quatro pessoas, e um
+  vetor com o logaritmo natural para os valores do IMC. Finalmente, faça
+  um vetor com os pesos para essas pessoas que têm um IMC maior que 25.
+\item
+  Mostrar os comandos que podem ser usados para criar as sequências:
+\end{enumerate}
+
+\begin{verbatim}
+## [1] 1 2 3
+\end{verbatim}
+
+\begin{verbatim}
+##  [1] 10 11 12 13 14 15 16 17 18 19 20
+\end{verbatim}
+
+\begin{verbatim}
+## [1] -3 -2 -1  0  1  2  3
+\end{verbatim}
+
+\begin{verbatim}
+## [1] -8 -7 -6 -5
+\end{verbatim}
+
+\begin{verbatim}
+##  [1] 2.4 2.9 3.4 3.9 4.4 4.9 5.4 5.9 6.4 6.9 7.4
+\end{verbatim}
+
+\begin{verbatim}
+##  [1]  0.0  1.1  2.2  3.3  4.4  5.5  6.6  7.7  8.8  9.9 11.0
+\end{verbatim}
+
+\begin{verbatim}
+##  [1]  0  2  4  6  8 10 12 14 16 18 20
+\end{verbatim}
+
+\begin{verbatim}
+##  [1]  1  3  5  7  9 11 13 15 17 19
+\end{verbatim}
+
+\begin{verbatim}
+##  [1] 1 1 2 2 3 3 4 4 5 5
+\end{verbatim}
+
+\begin{verbatim}
+##  [1] 1 2 3 4 5 1 2 3 4 5
+\end{verbatim}
+
+\begin{verbatim}
+##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5
+\end{verbatim}
+
+\begin{verbatim}
+##  [1] 1 1 1 1 1 2 2 2 2 3 3 3 4 4 5
+\end{verbatim}
+
+\begin{verbatim}
+##  [1]  0.0  2.5  2.5  5.0  5.0  5.0  7.5  7.5  7.5  7.5 10.0 10.0 10.0 10.0 10.0
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "a" "b" "c" "d" "e"
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "c" "f" "i" "l"
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "H" "G" "F" "E" "D" "C" "B"
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "A" "C" "E" "G" "I" "K"
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "T1" "T2" "T3" "T1" "T2" "T3" "T1" "T2" "T3"
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "T1" "T1" "T2" "T2" "T3" "T3" "T3" "T3"
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\item
+  Suponha que você marcou 10 tempos que gasta para executar uma tarefa.
+  Os tempos em minutos foram: 18, 14, 14, 15, 14, 34, 16, 17, 21, 26.
+  Armazene esses valores em um objeto com o nome \texttt{tempo}. Usando
+  funções do R obtenha o tempo máximo, mínimo e o tempo médio.
+\item
+  (continuando o exercício anterior) O valor 34 foi um erro, ele na
+  verdade é 15. Sem digitar tudo novamente, e usando colchetes
+  \texttt{{[}{]}}, altere o valor e calcule novamente o tempo médio.
+\item
+  Você consegue prever o resultado dos comandos abaixo? Caso não
+  consiga, execute os comandos e veja o resultado:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{9}\NormalTok{)}
+\NormalTok{y}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{11}\NormalTok{,}\DecValTok{13}\NormalTok{)}
+\NormalTok{x}\SpecialCharTok{+}\DecValTok{1}
+\NormalTok{y}\SpecialCharTok{*}\DecValTok{2}
+\FunctionTok{length}\NormalTok{(x)}
+\FunctionTok{length}\NormalTok{(y)}
+\NormalTok{x }\SpecialCharTok{+}\NormalTok{ y}
+\NormalTok{y[}\DecValTok{3}\NormalTok{]}
+\NormalTok{y[}\SpecialCharTok{{-}}\DecValTok{3}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\item
+  Calcule a velocidade média de um objeto que percorreu 150 km em 2.5
+  horas. \textbf{Sugestão:} lembre-se da fórmula do cálculo da
+  velocidade média.
+\item
+  Calcule \(|2^3-3^2|\)
+\item
+  Suponha que você deseje jogar na mega-sena, mas não sabe quais números
+  jogar, use a função sample do R para escolher seis números para você.
+  Lembre que a mega-sena tem valores de 1 a 60.
+\item
+  Crie uma sequencia de dados de 1 a 30 apenas com números impares. Use
+  a função \texttt{seq()}.
+\item
+  Utilizando apenas as funções \texttt{c()}, \texttt{seq()} e indexação
+  de vetores \texttt{{[}{]}}, crie os seguintes objetos:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Uma sequência de quinze valores em intervalos regulares, indo de 0 a
+    100, nomeada sq1.
+  \item
+    Um objeto, denominado sq2, que contenha todos os elementos de sq1,
+    exceto o quinto e décimo valores.
+  \item
+    Um vetor sq3 contendo apenas as posições ímpares do objeto sq1.
+  \item
+    Uma sequência igual a sq1 substituindo, apenas os valores nas
+    posições pares, pelo número relativo à sua posição. Denomine esse
+    objeto de sq4.
+  \end{enumerate}
+\item
+  Abaixo estão listadas as distâncias por estradas entre quatro cidades
+  da Europa, em quilômetros:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Atenas a Madri: 3949
+  \item
+    Atenas a Paris: 3000
+  \item
+    Atenas a Estocolmo: 3927
+  \item
+    Madri a Paris: 1273
+  \item
+    Madri a Estocolomo: 3188
+  \item
+    Paris a Estocolmo: 1827
+  \end{itemize}
+\end{enumerate}
+
+Crie um objeto da classe matrix denominado dist.cid com os valores
+acima. Nesta matriz, a diagonal principal deve conter zeros e o
+``triângulo'' acima da diagonal principal deve conter as mesmas
+informações do ``triângulo'' abaixo da diagonal principal. Para
+facilitar o uso desse objeto, o nome das linhas e das colunas deve ser o
+nome das cidades. Você consegue pensar em duas formas diferentes de
+criar a matriz com nomes nas linhas e colunas? \textbf{Sugestão:}
+utilize as funções lower.tri,upper.tri e diag.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{18}
+\item
+  Faça um programa que receba quatro números, calcule e mostre a soma
+  desses números.
+\item
+  Faça um programa que receba três notas, calcule e mostre a média
+  aritmética.
+\item
+  Faça um programa que receba três notas e seus respectivos pesos,
+  calcule e mostre a média ponderada.
+\item
+  Faça um programa que receba o salário de um funcionário, calcule e
+  mostre o novo salário, sabendo-se que este sofreu um aumento de
+  \(25\%\).
+\item
+  Faça um programa que receba o salário de um funcionário e o percentual
+  de aumento, calcule e mostre o valor do aumento e o novo salário.
+\item
+  Faça um programa que receba o salário base de um funcionário, calcule
+  e mostre o salário a receber, sabendo-se que o funcionário tem
+  gratificação de \(128\) reais sobre o salário base e paga os impostos
+  de \(14\%\) e \(25/%
+  \), referentes a previdência e de renda. Note que não há incidência de
+  imposto na gratificação e a ordem de desconto dos impostos é primeiro
+  o da previdência e posteriormente o de renda.
+\item
+  Faça um programa que receba o valor de um depósito, o valor da taxa de
+  juros compostos e o tempo de aplicação. Calcule e mostre o valor do
+  rendimento e o valor total depois do rendimento.
+\item
+  Faça um programa que calcule e mostre a área de um triângulo.
+\item
+  Faça um programa que calcule e mostre a área de um círculo.
+\item
+  Faça um programa que receba um número positivo e maior que zero,
+  calcule e mostre:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    número digitado ao quadrado;
+  \item
+    o número digitado ao cubo;
+  \item
+    a raiz quadrado do número digitado;
+  \item
+    a raiz cúbica do número digitado.
+  \end{enumerate}
+\item
+  Faça um programa que receba dois números e mostre o maior.
+\item
+  Darth Vader comprou um saco de ração com peso em quilos. Ele possui
+  dois gatos, para os quais fornece a quantidade de ração em gramas. A
+  quantidade diária de ração fornecida para cada gato é sempre a mesma.
+  Faça um programa que receba o peso do saco de ração e a quantidade de
+  ração fornecida para cada gato, calcule e mostre quanto restará no
+  saco após cinco dias.
+\item
+  Cada degrau de uma escada tem \(x\) de altura. Faça um programa que
+  receba essa altura e a altura que o usuário deseja alcançar subindo a
+  escada, calcule e mostre quantos degraus ele deverá subir para atingir
+  seu objetivo, sem se preocupar com a altura do usuário. Todas as
+  medidas fornecidas devem estar em metros.
+\item
+  Faça um programa que receba um conjunto de valores e mostre o mínimo,
+  mediana, máximo, média, amplitude, variância, desvio padrão e a
+  quantidade de elementos do conjunto de dados.
+\item
+  Faça um programa que receba um número inteiro e verifique se é par ou
+  ímpar.
+\item
+  Faça um programa para resolver equações do segundo grau (
+  \(ax^2 + bx + c = 0\) ).
+\end{enumerate}
+
+35.Dados três valores \(x, y, z\), verifique se eles podem ser os
+comprimentos dos lados de um triângulo e, se forem, verifique se é um
+triângulo equilátero, isósceles ou escaleno. Considere que:
+
+\begin{itemize}
+\tightlist
+\item
+  O comprimento de cada lado de um triângulo é menor que a soma dos
+  outros dois lados.
+\item
+  Chama-se equilátero o triângulo que tem os três lados iguais
+\item
+  Denomina-se isósceles o triângulo que tem o comprimento de dois lados
+  iguais.
+\item
+  Recebe o nome de escaleno o triângulo que tem os três lados
+  diferentes.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{35}
+\tightlist
+\item
+  Implementar uma função no R para realizar o teste \emph{t} de
+  \emph{Student} para duas amostras independentes e normais. Considerar
+  os casos de variâncias heterogêneas e homogêneas. Utilizar uma
+  estrutura condicional para aplicar o teste apropriado, caso as
+  variâncias sejam heterogêneas ou homogêneas.
+\end{enumerate}
+
+\textbf{Sugestões:}
+
+\begin{itemize}
+\tightlist
+\item
+  utilizar a função \texttt{bartlett.test()} (teste de Bartlett) para
+  homogeneidade de variâncias.
+\item
+  na estrutura condicional referente a homogeneidade de variâncias,
+  considere o valor-p do teste de Bartlett.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{36}
+\item
+  Construa uma função que apresenta \(n\) termos da sequência de
+  Fibonacci.
+\item
+  Considerando a função do exercício anterior, construa uma nova função
+  que apresenta o \texttt{n-ésimo} termo da sequência de Fibonacci.
+\item
+  Considerando a função que obtém uma estimativa do intervalo de
+  confiança para a média de uma população normal de variância
+  desconhecida:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{IC.t }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x,}\AttributeTok{alpha =} \FloatTok{0.05}\NormalTok{)\{}
+\NormalTok{  n }\OtherTok{\textless{}{-}} \FunctionTok{length}\NormalTok{(x)}
+\NormalTok{  IC }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{mean}\NormalTok{(x) }\SpecialCharTok{{-}} \FunctionTok{qt}\NormalTok{(}\DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ alpha}\SpecialCharTok{/}\DecValTok{2}\NormalTok{, n}\DecValTok{{-}1}\NormalTok{) }\SpecialCharTok{*} \FunctionTok{sd}\NormalTok{(x)}\SpecialCharTok{/}\FunctionTok{sqrt}\NormalTok{(n),}
+\FunctionTok{mean}\NormalTok{(x) }\SpecialCharTok{+} \FunctionTok{qt}\NormalTok{(}\DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ alpha}\SpecialCharTok{/}\DecValTok{2}\NormalTok{, n}\DecValTok{{-}1}\NormalTok{) }\SpecialCharTok{*} \FunctionTok{sd}\NormalTok{(x)}\SpecialCharTok{/}\FunctionTok{sqrt}\NormalTok{(n))}
+  \FunctionTok{return}\NormalTok{(}\AttributeTok{IC =}\NormalTok{ IC)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Construa uma função que obtém \(m\) amostras aleatórias de tamanho \(n\)
+da distribuição normal de média \(\mu\) e desvio padrão \(\sigma\)
+(função \texttt{rnorm(n,\ mean,\ sd)}), obtém estimativas de intervalos
+de confiança \(1 - \alpha\) para cada amostra e, considerando o valor
+paramétrico \(\mu\), calcula a proporção de intervalos que contém o
+valor do parâmetro \(\mu\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{39}
+\item
+  Descrever a função \texttt{apply()} (já implementada no R), e
+  apresentar exemplo\textbf{s} de sua utilização e refaça o exercício
+  anterior usando a função \texttt{apply}.
+\item
+  Construa uma função que calcula o traço de uma matriz \(\mathbf{A}\)
+  de dimensões \(n \times n\), sendo o traço a soma dos elementos da
+  diagonal principal, ou seja,
+  \(tr(\mathbf{A}) = \sum_{i = 1}^n a_{ii}\). Acrescente um aviso se a
+  matriz \(\mathbf{A}\) não for quadrada.
+\item
+  Desenvolva uma função em linguagem R que calcula a média geométrica de
+  um vetor \(\mathbf{x} = (x_1,\cdots,x_n)\) e retorna uma mensagem de
+  erro se algum elemento de \(\mathbf{x}\) for negativo ou nulo. A média
+  geométrica de \(\mathbf{x} = (x_1,\cdots,x_n)\) é calculada por \[
+  mg = \left(\prod_{i = 1}^n x_i \right)^{1/n}.
+  \] \textbf{Sugestão:} considere as funções \texttt{any()} e
+  \texttt{stop()}.
+\end{enumerate}
+
+43 Desenvolva uma função em linguagem R que calcula a média harmônica
+ponderada de um vetor \(\mathbf{x} = (x_1,\cdots,x_n)\) com pesos
+\(\mathbf{w} = (w_1,\cdots,w_n)\) e retorna uma mensagem de erro se
+algum elemento de \(\mathbf{x}\) ou \(\mathbf{w}\) for negativo ou nulo.
+A média harmônica ponderada de \(\mathbf{x} = (x_1,\cdots,x_n)\) com
+pesos \(\mathbf{w} = (w_1,\cdots,w_n)\) é calculada por \[
+mh = \frac{\sum_{i = 1}^n w_i}{\sum_{i = 1}^n \frac{w_i}{x_i} }.
+\] \textbf{Sugestão:} considere as funções \texttt{any()} e
+\texttt{stop()}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{43}
+\tightlist
+\item
+  A função que se segue baseia-se no crivo de Eratóstenes, o mais antigo
+  método sistemático para listar os números primos até um determinado
+  valor \(n\) . A ideia é a seguinte: iniciar com um vetor de números de
+  \(2\) a \(n\). Começando com \(2\), eliminar todos os múltiplos de
+  \(2\), que são maiores do que \(2\). Em seguida, passar para o próximo
+  número restante no vetor, neste caso, \(3\). Agora, remova todos os
+  múltiplos de \(3\), que são maiores do que \(3\). Continue com todos
+  os valores restantes do vetor. O valor \(4\) foi removido na primeira
+  iteração, deixando \(5\) como o próximo elemento a ser considerado
+  após o \(3\); todos os múltiplos de \(5\) será removido no passo
+  seguinte e assim por diante.
+\end{enumerate}
+
+\begin{quote}
+Fonte: W. John Braun, Duncan J. Murdoch. (2008) A first course in
+statistical programming with R. Cambridge University Press.
+\end{quote}
+
+Considerando a função em R a seguir, descreva detalhadamente sobre o que
+é a função e comente cada linha de instrução do código.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Eratostenes }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(n) \{ }\CommentTok{\# ?}
+\ControlFlowTok{if}\NormalTok{ (n }\SpecialCharTok{\%\%} \DecValTok{1} \SpecialCharTok{!=} \DecValTok{0} \SpecialCharTok{|}\NormalTok{ n }\SpecialCharTok{\textless{}} \DecValTok{2}\NormalTok{) }\FunctionTok{stop}\NormalTok{(}\StringTok{"O valor de n deve ser inteiro e \textgreater{}= 2."}\NormalTok{) }\CommentTok{\# ?}
+\NormalTok{crivo }\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\DecValTok{2}\NormalTok{, n) }\CommentTok{\# ?}
+\NormalTok{primos }\OtherTok{\textless{}{-}} \ConstantTok{NULL} \CommentTok{\# ?}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \FunctionTok{seq}\NormalTok{(}\DecValTok{2}\NormalTok{, n)) \{ }\CommentTok{\# ?}
+\ControlFlowTok{if}\NormalTok{ (}\FunctionTok{any}\NormalTok{(crivo }\SpecialCharTok{==}\NormalTok{ i)) \{ }\CommentTok{\# ?}
+\NormalTok{primos }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(primos, i) }\CommentTok{\# ?}
+\NormalTok{crivo }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(crivo[(crivo }\SpecialCharTok{\%\%}\NormalTok{ i) }\SpecialCharTok{!=} \DecValTok{0}\NormalTok{], i) }\CommentTok{\# ?}
+\NormalTok{\} }\CommentTok{\# ?}
+\NormalTok{\} }\CommentTok{\# ?}
+\FunctionTok{return}\NormalTok{(primos) }\CommentTok{\# ?}
+\NormalTok{\} }\CommentTok{\# ?}
+
+\FunctionTok{Eratostenes}\NormalTok{(}\DecValTok{0}\NormalTok{) }\CommentTok{\# ?}
+\NormalTok{Error }\ControlFlowTok{in} \FunctionTok{Eratostenes}\NormalTok{(}\DecValTok{0}\NormalTok{) }\SpecialCharTok{:}\NormalTok{ O valor de n deve ser inteiro e }\SpecialCharTok{\textgreater{}=} \FloatTok{2.} \CommentTok{\# ?}
+
+\FunctionTok{Eratostenes}\NormalTok{(}\DecValTok{12}\NormalTok{) }\CommentTok{\# ?}
+\NormalTok{[}\DecValTok{1}\NormalTok{]  }\DecValTok{2}  \DecValTok{3}  \DecValTok{5}  \DecValTok{7} \DecValTok{11} \CommentTok{\# ?}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}

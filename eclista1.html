@@ -12,7 +12,7 @@
 <meta name="author" content="Prof. Dr. Juliano Bortolini" />
 
 
-<title>Estatística Computacional</title>
+<title>Lista 1 - Estatística Computacional</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -355,82 +355,341 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Estatística Computacional</h1>
+<h1 class="title toc-ignore">Lista 1 - Estatística Computacional</h1>
 <h4 class="author">Prof. Dr. Juliano Bortolini</h4>
 
 </div>
 
 
 <p><em>Bacharelado em Estatístida - UFMT</em></p>
-<p><em>Período letivo: 2024/1</em></p>
-<div id="avisos" class="section level3">
-<h3>Avisos:</h3>
+<ol style="list-style-type: decimal">
+<li><p>Usando o <em>software</em> R, resolva as expressões
+numéricas:</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\frac{1}{2} + \frac{1}{3}\)</span></li>
+<li><span class="math inline">\(\frac{4}{3} - \left(- \frac{2}{3}
+\right) + \frac{5}{2}\)</span></li>
+<li><span class="math inline">\(4 - \left( - \frac{2}{3} + \frac{1}{4} -
+\frac{1}{8} \right) + \frac{1}{5}\)</span></li>
+<li><span class="math inline">\(\left( - \frac{1}{2}\right)^2 \left( -
+\frac{1}{3}\right) + \left( \frac{1}{4}\right)^{-1}\)</span></li>
+<li><span class="math inline">\(\frac{\sqrt{0,25 \cdot 0,04} +
+\sqrt[3]{0,01 \cdot 0,0001}}{\sqrt{0,32 \div 0,02} -
+\sqrt{0,5^4}}\)</span></li>
+<li><span class="math inline">\(\frac{\left(\frac{1}{3}\right)^{-2}}{\left(\frac{2}{3}\right)^{-2}
+- \left(\frac{3}{2}\right)^{-2}}\)</span></li>
+<li><span class="math inline">\(\frac{5^{-1}}{10^{-1} -
+2^{-1}}\)</span></li>
+<li><span class="math inline">\(\left(-\frac{1}{2} \right)^2
+\left(-\frac{1}{3} \right) + \left(-\frac{2}{3} \right)^{-1} \div
+\left(-\frac{1}{3} \right)^{-2}\)</span></li>
+<li><span class="math inline">\(\left( \frac{1}{3} + \frac{2}{5} -
+\frac{7}{2}\right) - \left( -\frac{1}{2} + \frac{1}{3} +
+\frac{5}{4}\right)\)</span></li>
+<li><span class="math inline">\(\frac{1}{2} - \left[ \frac{5}{3} -
+\left( \frac{1}{4} + \frac{1}{3}\right) \right]\)</span></li>
+<li><span class="math inline">\(\left[\left(\frac{1}{2} +
+\sqrt{2}\right)^{-2} + \frac{\pi^2}{\frac{\sqrt{3}}{1 +
+0,333...}}\right] - \log_{10}(16 + 7,5^2)\)</span></li>
+</ol></li>
+<li><p>Execute os comandos <code>sqrt(16)</code>, <code>16^0.5</code> e
+<code>4^3</code>.</p></li>
+<li><p>Execute os comandos <code>log10(1000)</code>,
+<code>log(1000)</code>, <code>exp(log (1000))</code>. Então, tente o
+comando <code>log2(64)</code>. Quais as diferenças entre as funções
+executadas?</p></li>
+<li><p>Experimente o comando <code>?log</code>. Leia as primeiras
+linhas. O texto corresponde às suas observações do exercício
+anterior?</p></li>
+<li><p>Execute os comandos <code>pi</code>, <code>round(pi)</code>,
+<code>round(pi, digits = 4)</code> e <code>trunc(pi)</code>.</p></li>
+<li><p>As funções seno e cosseno são implementadas em <code>sin</code> e
+<code>cos</code>. Calcule <code>sin(pi)</code>, <code>cos(pi)</code>,
+<code>sin(pi/2)</code>, <code>cos(pi/2)</code>.</p></li>
+<li><p>Execute os comandos a seguir e observe os resultados. Note que as
+operações são realizadas elemento a elementos.</p></li>
+</ol>
+<pre class="r"><code>  x &lt;- c(3,6,8)
+  x
+  x/2
+  x^2
+  sqrt(x)
+  x[2]
+  x[c(1,3)]
+  x[-3]
+  y &lt;- c(2,5,1)
+  y
+  x-y
+  x*y
+  x[y &gt; 1.5]
+  y[x == 6]
+  4:10
+  seq(2,3, by = 0.1)
+  rep(x, each = 4)</code></pre>
+<ol start="8" style="list-style-type: decimal">
+<li><p>Suponha que registramos a altura e o peso para quatro pessoas:
+alturas em cm são 180, 165, 160, 193; pesos em kg são 87, 58, 65, 100.
+Faça dois vetores, altura e peso, com os dados. O índice de massa
+corporal (IMC) é definido como <span class="math display">\[
+\frac{peso \ (\text{em kg})}{altura^2 \ (\text{em m}) }
+\]</span> Faça um vetor com os valores do IMC para as quatro pessoas, e
+um vetor com o logaritmo natural para os valores do IMC. Finalmente,
+faça um vetor com os pesos para essas pessoas que têm um IMC maior que
+25.</p></li>
+<li><p>Mostrar os comandos que podem ser usados para criar as
+sequências:</p></li>
+</ol>
+<pre><code>## [1] 1 2 3</code></pre>
+<pre><code>##  [1] 10 11 12 13 14 15 16 17 18 19 20</code></pre>
+<pre><code>## [1] -3 -2 -1  0  1  2  3</code></pre>
+<pre><code>## [1] -8 -7 -6 -5</code></pre>
+<pre><code>##  [1] 2.4 2.9 3.4 3.9 4.4 4.9 5.4 5.9 6.4 6.9 7.4</code></pre>
+<pre><code>##  [1]  0.0  1.1  2.2  3.3  4.4  5.5  6.6  7.7  8.8  9.9 11.0</code></pre>
+<pre><code>##  [1]  0  2  4  6  8 10 12 14 16 18 20</code></pre>
+<pre><code>##  [1]  1  3  5  7  9 11 13 15 17 19</code></pre>
+<pre><code>##  [1] 1 1 2 2 3 3 4 4 5 5</code></pre>
+<pre><code>##  [1] 1 2 3 4 5 1 2 3 4 5</code></pre>
+<pre><code>##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5</code></pre>
+<pre><code>##  [1] 1 1 1 1 1 2 2 2 2 3 3 3 4 4 5</code></pre>
+<pre><code>##  [1]  0.0  2.5  2.5  5.0  5.0  5.0  7.5  7.5  7.5  7.5 10.0 10.0 10.0 10.0 10.0</code></pre>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot;</code></pre>
+<pre><code>## [1] &quot;c&quot; &quot;f&quot; &quot;i&quot; &quot;l&quot;</code></pre>
+<pre><code>## [1] &quot;H&quot; &quot;G&quot; &quot;F&quot; &quot;E&quot; &quot;D&quot; &quot;C&quot; &quot;B&quot;</code></pre>
+<pre><code>## [1] &quot;A&quot; &quot;C&quot; &quot;E&quot; &quot;G&quot; &quot;I&quot; &quot;K&quot;</code></pre>
+<pre><code>## [1] &quot;T1&quot; &quot;T2&quot; &quot;T3&quot; &quot;T1&quot; &quot;T2&quot; &quot;T3&quot; &quot;T1&quot; &quot;T2&quot; &quot;T3&quot;</code></pre>
+<pre><code>## [1] &quot;T1&quot; &quot;T1&quot; &quot;T2&quot; &quot;T2&quot; &quot;T3&quot; &quot;T3&quot; &quot;T3&quot; &quot;T3&quot;</code></pre>
+<ol start="10" style="list-style-type: decimal">
+<li><p>Suponha que você marcou 10 tempos que gasta para executar uma
+tarefa. Os tempos em minutos foram: 18, 14, 14, 15, 14, 34, 16, 17, 21,
+26. Armazene esses valores em um objeto com o nome <code>tempo</code>.
+Usando funções do R obtenha o tempo máximo, mínimo e o tempo
+médio.</p></li>
+<li><p>(continuando o exercício anterior) O valor 34 foi um erro, ele na
+verdade é 15. Sem digitar tudo novamente, e usando colchetes
+<code>[]</code>, altere o valor e calcule novamente o tempo
+médio.</p></li>
+<li><p>Você consegue prever o resultado dos comandos abaixo? Caso não
+consiga, execute os comandos e veja o resultado:</p></li>
+</ol>
+<pre class="r"><code>x&lt;-c(1,3,5,7,9)
+y&lt;-c(2,3,5,7,11,13)
+x+1
+y*2
+length(x)
+length(y)
+x + y
+y[3]
+y[-3]</code></pre>
+<ol start="13" style="list-style-type: decimal">
+<li><p>Calcule a velocidade média de um objeto que percorreu 150 km em
+2.5 horas. <strong>Sugestão:</strong> lembre-se da fórmula do cálculo da
+velocidade média.</p></li>
+<li><p>Calcule <span class="math inline">\(|2^3-3^2|\)</span></p></li>
+<li><p>Suponha que você deseje jogar na mega-sena, mas não sabe quais
+números jogar, use a função sample do R para escolher seis números para
+você. Lembre que a mega-sena tem valores de 1 a 60.</p></li>
+<li><p>Crie uma sequencia de dados de 1 a 30 apenas com números impares.
+Use a função <code>seq()</code>.</p></li>
+<li><p>Utilizando apenas as funções <code>c()</code>, <code>seq()</code>
+e indexação de vetores <code>[]</code>, crie os seguintes objetos:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Uma sequência de quinze valores em intervalos regulares, indo de 0 a
+100, nomeada sq1.</li>
+<li>Um objeto, denominado sq2, que contenha todos os elementos de sq1,
+exceto o quinto e décimo valores.</li>
+<li>Um vetor sq3 contendo apenas as posições ímpares do objeto sq1.</li>
+<li>Uma sequência igual a sq1 substituindo, apenas os valores nas
+posições pares, pelo número relativo à sua posição. Denomine esse objeto
+de sq4.</li>
+</ol></li>
+<li><p>Abaixo estão listadas as distâncias por estradas entre quatro
+cidades da Europa, em quilômetros:</p>
 <ul>
-<li>Última atualização do site às <strong>19:41</strong> do dia
-<strong>24/07/2024</strong>.</li>
-<li>Monitores: Georgiano e Edimar</li>
-<li><a href="https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu">Whatsapp
-da disciplina</a></li>
-</ul>
-</div>
-<div id="ementa" class="section level3">
-<h3>Ementa:</h3>
-<p>Geração de realizações de variáveis aleatórias uniformes. Geração de
-realizações de variáveis aleatórias não-uniformes. Método de Monte
-Carlo. Métodos de reamostragem. Métodos de otimização numérica.</p>
-</div>
-<div id="notas-de-aula" class="section level3">
-<h3>Notas de aula:</h3>
+<li>Atenas a Madri: 3949</li>
+<li>Atenas a Paris: 3000</li>
+<li>Atenas a Estocolmo: 3927</li>
+<li>Madri a Paris: 1273</li>
+<li>Madri a Estocolomo: 3188</li>
+<li>Paris a Estocolmo: 1827</li>
+</ul></li>
+</ol>
+<p>Crie um objeto da classe matrix denominado dist.cid com os valores
+acima. Nesta matriz, a diagonal principal deve conter zeros e o
+“triângulo” acima da diagonal principal deve conter as mesmas
+informações do “triângulo” abaixo da diagonal principal. Para facilitar
+o uso desse objeto, o nome das linhas e das colunas deve ser o nome das
+cidades. Você consegue pensar em duas formas diferentes de criar a
+matriz com nomes nas linhas e colunas? <strong>Sugestão:</strong>
+utilize as funções lower.tri,upper.tri e diag.</p>
+<ol start="19" style="list-style-type: decimal">
+<li><p>Faça um programa que receba quatro números, calcule e mostre a
+soma desses números.</p></li>
+<li><p>Faça um programa que receba três notas, calcule e mostre a média
+aritmética.</p></li>
+<li><p>Faça um programa que receba três notas e seus respectivos pesos,
+calcule e mostre a média ponderada.</p></li>
+<li><p>Faça um programa que receba o salário de um funcionário, calcule
+e mostre o novo salário, sabendo-se que este sofreu um aumento de <span class="math inline">\(25\%\)</span>.</p></li>
+<li><p>Faça um programa que receba o salário de um funcionário e o
+percentual de aumento, calcule e mostre o valor do aumento e o novo
+salário.</p></li>
+<li><p>Faça um programa que receba o salário base de um funcionário,
+calcule e mostre o salário a receber, sabendo-se que o funcionário tem
+gratificação de <span class="math inline">\(128\)</span> reais sobre o
+salário base e paga os impostos de <span class="math inline">\(14\%\)</span> e <span class="math inline">\(25/%\)</span>, referentes a previdência e de
+renda. Note que não há incidência de imposto na gratificação e a ordem
+de desconto dos impostos é primeiro o da previdência e posteriormente o
+de renda.</p></li>
+<li><p>Faça um programa que receba o valor de um depósito, o valor da
+taxa de juros compostos e o tempo de aplicação. Calcule e mostre o valor
+do rendimento e o valor total depois do rendimento.</p></li>
+<li><p>Faça um programa que calcule e mostre a área de um
+triângulo.</p></li>
+<li><p>Faça um programa que calcule e mostre a área de um
+círculo.</p></li>
+<li><p>Faça um programa que receba um número positivo e maior que zero,
+calcule e mostre:</p>
+<ol style="list-style-type: lower-alpha">
+<li>número digitado ao quadrado;</li>
+<li>o número digitado ao cubo;</li>
+<li>a raiz quadrado do número digitado;</li>
+<li>a raiz cúbica do número digitado.</li>
+</ol></li>
+<li><p>Faça um programa que receba dois números e mostre o
+maior.</p></li>
+<li><p>Darth Vader comprou um saco de ração com peso em quilos. Ele
+possui dois gatos, para os quais fornece a quantidade de ração em
+gramas. A quantidade diária de ração fornecida para cada gato é sempre a
+mesma. Faça um programa que receba o peso do saco de ração e a
+quantidade de ração fornecida para cada gato, calcule e mostre quanto
+restará no saco após cinco dias.</p></li>
+<li><p>Cada degrau de uma escada tem <span class="math inline">\(x\)</span> de altura. Faça um programa que receba
+essa altura e a altura que o usuário deseja alcançar subindo a escada,
+calcule e mostre quantos degraus ele deverá subir para atingir seu
+objetivo, sem se preocupar com a altura do usuário. Todas as medidas
+fornecidas devem estar em metros.</p></li>
+<li><p>Faça um programa que receba um conjunto de valores e mostre o
+mínimo, mediana, máximo, média, amplitude, variância, desvio padrão e a
+quantidade de elementos do conjunto de dados.</p></li>
+<li><p>Faça um programa que receba um número inteiro e verifique se é
+par ou ímpar.</p></li>
+<li><p>Faça um programa para resolver equações do segundo grau ( <span class="math inline">\(ax^2 + bx + c = 0\)</span> ).</p></li>
+</ol>
+<p>35.Dados três valores <span class="math inline">\(x, y, z\)</span>,
+verifique se eles podem ser os comprimentos dos lados de um triângulo e,
+se forem, verifique se é um triângulo equilátero, isósceles ou escaleno.
+Considere que:</p>
 <ul>
-<li><p><a href>Aula 1</a>: apresentação da disciplina e geração de
-variáveis aleatórias unifome.</p></li>
-<li><p><a href="eclista1.html">Lista 1</a></p></li>
-<li><p><a href>Aula 2</a>: geração de variáveis aleatórias no R.
-Método da transformação inversa (v.a.c.) e exercícios.</p></li>
-<li><p><a href>Lista 2</a>: capítulo 3 do livro da Maria Rizzo e
-capítulos 3, 4 e 5 do livro do Sheldon Ross.</p></li>
+<li>O comprimento de cada lado de um triângulo é menor que a soma dos
+outros dois lados.</li>
+<li>Chama-se equilátero o triângulo que tem os três lados iguais</li>
+<li>Denomina-se isósceles o triângulo que tem o comprimento de dois
+lados iguais.</li>
+<li>Recebe o nome de escaleno o triângulo que tem os três lados
+diferentes.</li>
 </ul>
-</div>
-<div id="avaliação" class="section level3">
-<h3>Avaliação:</h3>
-<p><em>Os critérios de avaliação seguem a Resolução CONSEPE
-63/2018.</em></p>
-<p>2 avaliações (com pontuação de 0 a 10):</p>
+<ol start="36" style="list-style-type: decimal">
+<li>Implementar uma função no R para realizar o teste <em>t</em> de
+<em>Student</em> para duas amostras independentes e normais. Considerar
+os casos de variâncias heterogêneas e homogêneas. Utilizar uma estrutura
+condicional para aplicar o teste apropriado, caso as variâncias sejam
+heterogêneas ou homogêneas.</li>
+</ol>
+<p><strong>Sugestões:</strong></p>
 <ul>
-<li>A1: geração de realizações de variáveis aleatórias.</li>
-<li>A2: método de Monte Carlo, métodos de reamostragem e métodos de
-otimização numérica.</li>
+<li>utilizar a função <code>bartlett.test()</code> (teste de Bartlett)
+para homogeneidade de variâncias.</li>
+<li>na estrutura condicional referente a homogeneidade de variâncias,
+considere o valor-p do teste de Bartlett.</li>
 </ul>
-<p>O aluno que tiver a nota final, definida pela média aritmética das
-notas das 2 avaliações, maior ou igual a 5 estará aprovado. <strong>Não
-há prova final.</strong></p>
-<p>Faltas superiores a 16 horas (equivalente a 4 aulas) implicam em
-reprovação por falta.</p>
-<p>Solicitações de segunda chamada para as provas serão avaliadas
-conforme o disposto no art. 80 da Res. Consepe nº 14/1999 e art. 8º da
-Res. Consepe nº 27/1999. Clique <a href="https://ufmt.br/unidade/estudante/graduacao/pagina/requerimentos/188">aqui</a>
-para mais informações sobre segunda chamada.</p>
-</div>
-<div id="livro-texto" class="section level3">
-<h3>Livro texto:</h3>
-<ul>
-<li>Maria L. Rizzo. <strong>Statistical Computing with R</strong>
-Chapman &amp; Hall/CRC. 2019.</li>
-</ul>
-</div>
-<div id="livro-complementar" class="section level3">
-<h3>Livro complementar:</h3>
-<ul>
-<li>Sheldon M. Ross. <strong>Simulation</strong> Academic Press.
-2006.</li>
-</ul>
-<hr />
-<div style="text-align: center;">
-<p><a href="https://instagram.com/profjulianobortolini"><span class="citation">@profjulianobortolini</span></a>      <a href="http://www.julianobortolini.com.br">www.julianobortolini.com.br</a>
-     <a href="https://linkedin.com/in/julianobortolini">linkedin</a>    
-  <a href="https://github.com/julianobortolini">github</a>       <a href="http://lattes.cnpq.br/6210909768845403">lattes</a></p>
-</div>
-</div>
+<ol start="37" style="list-style-type: decimal">
+<li><p>Construa uma função que apresenta <span class="math inline">\(n\)</span> termos da sequência de
+Fibonacci.</p></li>
+<li><p>Considerando a função do exercício anterior, construa uma nova
+função que apresenta o <code>n-ésimo</code> termo da sequência de
+Fibonacci.</p></li>
+<li><p>Considerando a função que obtém uma estimativa do intervalo de
+confiança para a média de uma população normal de variância
+desconhecida:</p></li>
+</ol>
+<pre class="r"><code>IC.t &lt;- function(x,alpha = 0.05){
+  n &lt;- length(x)
+  IC &lt;- c(mean(x) - qt(1 - alpha/2, n-1) * sd(x)/sqrt(n),
+mean(x) + qt(1 - alpha/2, n-1) * sd(x)/sqrt(n))
+  return(IC = IC)
+}</code></pre>
+<p>Construa uma função que obtém <span class="math inline">\(m\)</span>
+amostras aleatórias de tamanho <span class="math inline">\(n\)</span> da
+distribuição normal de média <span class="math inline">\(\mu\)</span> e
+desvio padrão <span class="math inline">\(\sigma\)</span> (função
+<code>rnorm(n, mean, sd)</code>), obtém estimativas de intervalos de
+confiança <span class="math inline">\(1 - \alpha\)</span> para cada
+amostra e, considerando o valor paramétrico <span class="math inline">\(\mu\)</span>, calcula a proporção de intervalos
+que contém o valor do parâmetro <span class="math inline">\(\mu\)</span>.</p>
+<ol start="40" style="list-style-type: decimal">
+<li><p>Descrever a função <code>apply()</code> (já implementada no R), e
+apresentar exemplo<strong>s</strong> de sua utilização e refaça o
+exercício anterior usando a função <code>apply</code>.</p></li>
+<li><p>Construa uma função que calcula o traço de uma matriz <span class="math inline">\(\mathbf{A}\)</span> de dimensões <span class="math inline">\(n \times n\)</span>, sendo o traço a soma dos
+elementos da diagonal principal, ou seja, <span class="math inline">\(tr(\mathbf{A}) = \sum_{i = 1}^n a_{ii}\)</span>.
+Acrescente um aviso se a matriz <span class="math inline">\(\mathbf{A}\)</span> não for quadrada.</p></li>
+<li><p>Desenvolva uma função em linguagem R que calcula a média
+geométrica de um vetor <span class="math inline">\(\mathbf{x} =
+(x_1,\cdots,x_n)\)</span> e retorna uma mensagem de erro se algum
+elemento de <span class="math inline">\(\mathbf{x}\)</span> for negativo
+ou nulo. A média geométrica de <span class="math inline">\(\mathbf{x} =
+(x_1,\cdots,x_n)\)</span> é calculada por <span class="math display">\[
+mg = \left(\prod_{i = 1}^n x_i \right)^{1/n}.
+\]</span> <strong>Sugestão:</strong> considere as funções
+<code>any()</code> e <code>stop()</code>.</p></li>
+</ol>
+<p>43 Desenvolva uma função em linguagem R que calcula a média harmônica
+ponderada de um vetor <span class="math inline">\(\mathbf{x} =
+(x_1,\cdots,x_n)\)</span> com pesos <span class="math inline">\(\mathbf{w} = (w_1,\cdots,w_n)\)</span> e retorna
+uma mensagem de erro se algum elemento de <span class="math inline">\(\mathbf{x}\)</span> ou <span class="math inline">\(\mathbf{w}\)</span> for negativo ou nulo. A média
+harmônica ponderada de <span class="math inline">\(\mathbf{x} =
+(x_1,\cdots,x_n)\)</span> com pesos <span class="math inline">\(\mathbf{w} = (w_1,\cdots,w_n)\)</span> é calculada
+por <span class="math display">\[
+mh = \frac{\sum_{i = 1}^n w_i}{\sum_{i = 1}^n \frac{w_i}{x_i} }.
+\]</span> <strong>Sugestão:</strong> considere as funções
+<code>any()</code> e <code>stop()</code>.</p>
+<ol start="44" style="list-style-type: decimal">
+<li>A função que se segue baseia-se no crivo de Eratóstenes, o mais
+antigo método sistemático para listar os números primos até um
+determinado valor <span class="math inline">\(n\)</span> . A ideia é a
+seguinte: iniciar com um vetor de números de <span class="math inline">\(2\)</span> a <span class="math inline">\(n\)</span>. Começando com <span class="math inline">\(2\)</span>, eliminar todos os múltiplos de <span class="math inline">\(2\)</span>, que são maiores do que <span class="math inline">\(2\)</span>. Em seguida, passar para o próximo
+número restante no vetor, neste caso, <span class="math inline">\(3\)</span>. Agora, remova todos os múltiplos de
+<span class="math inline">\(3\)</span>, que são maiores do que <span class="math inline">\(3\)</span>. Continue com todos os valores
+restantes do vetor. O valor <span class="math inline">\(4\)</span> foi
+removido na primeira iteração, deixando <span class="math inline">\(5\)</span> como o próximo elemento a ser
+considerado após o <span class="math inline">\(3\)</span>; todos os
+múltiplos de <span class="math inline">\(5\)</span> será removido no
+passo seguinte e assim por diante.</li>
+</ol>
+<blockquote>
+<p>Fonte: W. John Braun, Duncan J. Murdoch. (2008) A first course in
+statistical programming with R. Cambridge University Press.</p>
+</blockquote>
+<p>Considerando a função em R a seguir, descreva detalhadamente sobre o
+que é a função e comente cada linha de instrução do código.</p>
+<pre class="r"><code>Eratostenes &lt;- function(n) { # ?
+if (n %% 1 != 0 | n &lt; 2) stop(&quot;O valor de n deve ser inteiro e &gt;= 2.&quot;) # ?
+crivo &lt;- seq(2, n) # ?
+primos &lt;- NULL # ?
+for (i in seq(2, n)) { # ?
+if (any(crivo == i)) { # ?
+primos &lt;- c(primos, i) # ?
+crivo &lt;- c(crivo[(crivo %% i) != 0], i) # ?
+} # ?
+} # ?
+return(primos) # ?
+} # ?
+
+Eratostenes(0) # ?
+Error in Eratostenes(0) : O valor de n deve ser inteiro e &gt;= 2. # ?
+
+Eratostenes(12) # ?
+[1]  2  3  5  7 11 # ?</code></pre>
 
 
 
