@@ -13,7 +13,7 @@ output: html_document
 ### Avisos:
 
 - Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
-- Monitores: João Baptista e Georgiano
+- Monitores: Georgiano e Edimar
 - [Whatsapp da disciplina](https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu)
 
 
@@ -25,6 +25,8 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 ### Notas de aula:
 
 - [Aula 1](): apresentação da disciplina e geração de variáveis aleatórias unifome.
+
+- [Aula 2](): geração de variáveis aleatórias no R. Método da transformação inversa (v.a.c.) e exercícios.
 
 ### Avaliação:
 
