@@ -5,9 +5,9 @@ date: ""
 output: html_document
 ---
 
-*Bacharelado em Estatístida - UFMT*
+*Bacharelado em Estatística - UFMT*
 
-
+[**Página inicial**](index.html)
 
 1. Usando o *software* R, resolva as expressões numéricas:
    a. $\frac{1}{2} + \frac{1}{3}$

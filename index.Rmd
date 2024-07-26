@@ -26,11 +26,15 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 
 - [Aula 1](): apresentação da disciplina e geração de variáveis aleatórias unifome.
 
-- [Lista 1](eclista1.html)
+- [Lista 1](eclista1.html): exercícios diversos sobre o R.
 
-- [Aula 2](): geração de variáveis aleatórias no R. Método da transformação inversa (v.a.c.) e exercícios.
+- [Aula 2](aulas/aula2.html): geração de variáveis aleatórias no R. Método da transformação inversa (v.a. contínuas) e exercícios.
 
 - [Lista 2](): capítulo 3 do livro da Maria Rizzo e capítulos 3, 4 e 5 do livro do Sheldon Ross.
+
+- [Aula 3](): geração de variáveis aleatórias no R. Método da transformação inversa (v.a. discretas) e exercícios.
+
+- [Aula 4](): tópicos adicionais sobre geração de variáveis aleatórias.
 
 
 ### Avaliação:

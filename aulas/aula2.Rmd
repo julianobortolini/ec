@@ -1,0 +1,43 @@
+---
+title: "Estatística Computacional"
+author: "Prof. Dr. Juliano Bortolini"
+date: ""
+output: html_document
+---
+
+*Bacharelado em Estatística - UFMT*
+
+*Período letivo: 2024/1*
+
+Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
+
+[**Página inicial**](../index.html)
+
+**Aula 2: 24-7-2024**
+
+- Capítulo 3 do livro da Maria Rizzo.
+- Importância de obter realizações de variáveis aleatórias.
+- Geração de números aleatórios da distribuição uniforme no R.
+- Geração de números aleatórios da distribuição normal no R.
+- Função Quantílica.
+- Função de distribuição acumulada.
+- Exemplo do intervalo de confiança para o parâmetro $\mu$ da distribuição normal com variância desconhecida.
+- Método da transformação inversa para variáveis contínuas.
+- Exemplo para a função densidade $f(x) = 3x^2$, com $x \in (0,1)$.
+- Exemplo para a distribuição exponencial (funções `rexp2` e `rexp3`, feitas em sala de aula).
+- Exercícios 3.3. e 3.4 do livro da Maria Rizzo.
+
+----------
+<div style="text-align: center;">
+
+[@profjulianobortolini](https://instagram.com/profjulianobortolini) \  \  \ [www.julianobortolini.com.br](http://www.julianobortolini.com.br) \  \  \ [linkedin](https://linkedin.com/in/julianobortolini) \  \  \ [github](https://github.com/julianobortolini) \  \  \  [lattes](http://lattes.cnpq.br/6210909768845403)
+
+</div>
+
+
+
+
+
+  
+  
+  
