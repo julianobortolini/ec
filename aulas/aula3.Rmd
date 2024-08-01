@@ -1,0 +1,49 @@
+---
+title: "Estatística Computacional"
+author: "Prof. Dr. Juliano Bortolini"
+date: ""
+output: html_document
+---
+
+*Bacharelado em Estatística - UFMT*
+
+*Período letivo: 2024/1*
+
+Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
+
+[**Página inicial**](../index.html)
+
+**Aula 3: 31-7-2024**
+
+- Capítulo 4 do livro do Sheldon Ross.
+- Revisão do método da transformação inversa para v.a. contínuas ($x = F^{-1}(u)$, em que $u \sim U(0,1)$).
+- Algumas distribuições discretas: uniforme discreta, bernoulli, binomial, hipergeométrica, geométrica, binomial negativa e poisson.
+- Desenvolvimento das funções de probabilidade das distribuoições bernoulli, binomial, geométrica e binomial negativa.
+- Método da transformação inversa para v.a. discretas.
+- Algoritmo do método.
+- Exemplo 4a. do livro do Sheldon Ross.
+- Desenvolvimento das funções `rx` e `rx2` no R.
+- Exemplo 4e. do livro do Sheldon Ross (distribuição bernoulli).
+- Desenvolvimento da função `rber` no R.
+- Seção 4.3 do livro do Sheldon Ross (distribuição binomial).
+- Desenvolvimento da função `rbinom2` no R.
+- Exemplo 4d. do livro do Sheldon Ross (distribuição geométrica).
+- Desenvolvimento da função `rgeom2` no R.
+- Tarefa para casa:
+  - seção 4.2. do livro do Sheldon Ross (distribuição poisson).
+  - desenvolver a função `rpois2` no R.
+
+----------
+<div style="text-align: center;">
+
+[@profjulianobortolini](https://instagram.com/profjulianobortolini) \  \  \ [www.julianobortolini.com.br](http://www.julianobortolini.com.br) \  \  \ [linkedin](https://linkedin.com/in/julianobortolini) \  \  \ [github](https://github.com/julianobortolini) \  \  \  [lattes](http://lattes.cnpq.br/6210909768845403)
+
+</div>
+
+
+
+
+
+  
+  
+  
