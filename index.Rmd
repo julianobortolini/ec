@@ -34,7 +34,11 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 
 - [Aula 3](aulas/aula3.html): geração de variáveis aleatórias no R. Método da transformação inversa (v.a. discretas) e exercícios.
 
-- Aula 4: tópicos adicionais sobre geração de variáveis aleatórias.
+- [Aula 4](aulas/aula4.html): tópicos adicionais sobre geração de variáveis aleatórias.
+
+- [Aula 5](aulas/aula5.html): tópicos adicionais sobre geração de variáveis aleatórias.
+
+- Aula 6: prova 1.
 
 
 ### Avaliação:
