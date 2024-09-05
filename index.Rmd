@@ -40,6 +40,22 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 
 - Aula 6: prova 1.
 
+- Aula 7: não teve aula.
+
+- Monitoria: resolução da prova 1 com o monitor Georgiano.
+
+- [Aula 8](aulas/aula8.html): método de Monte Carlo.
+
+- Aula 9: método de Monte Carlo em inferência.
+
+- Aula 10: métodos de reamostragem: bootstrap.
+
+- Aula 11: métodos de reamostragem: jackknife.
+
+
+
+
+
 
 ### Avaliação:
 

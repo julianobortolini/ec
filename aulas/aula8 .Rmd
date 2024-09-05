@@ -1,0 +1,49 @@
+---
+title: "Estatística Computacional"
+author: "Prof. Dr. Juliano Bortolini"
+date: ""
+output: html_document
+---
+
+*Bacharelado em Estatística - UFMT*
+
+*Período letivo: 2024/1*
+
+Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
+
+[**Página inicial**](../index.html)
+
+**Aula 8: 4-9-2024**
+
+- Capítulo 6 do livro da Maria Rizzo.
+- Material enviado no grupo do whatsapp.
+- Motivação para o uso de métodos de Monte Carlo.
+- Cálculo de probabilidades da normal padrão.
+- Estimativa para o valor de $\pi$ usando Monte Carlo.
+- Monte Carlo para a resolução de integrais definidas.
+- Exemplos.
+- Repetições em Monte Carlo.
+- Erro padrão de Monte Carlo.
+- Uso de funções indicadoras em Monte Carlo.
+- Exemplos.
+- Monte Carlo via Função de Importância.
+- Atividade: estudar intervalos de confiança baseados em Monte Carlo.
+- Comentários: 
+  - teremos aula no período de recesso nas quartas e quintas-feiras.
+  - estudar e fazer os exercícios do capítulo 6 do livro da Maria Rizzo.
+  - estudar o capítulo 7 do livro da Maria Rizzo para a próxima aula.
+
+----------
+<div style="text-align: center;">
+
+[@profjulianobortolini](https://instagram.com/profjulianobortolini) \  \  \ [www.julianobortolini.com.br](http://www.julianobortolini.com.br) \  \  \ [linkedin](https://linkedin.com/in/julianobortolini) \  \  \ [github](https://github.com/julianobortolini) \  \  \  [lattes](http://lattes.cnpq.br/6210909768845403)
+
+</div>
+
+
+
+
+
+  
+  
+  
