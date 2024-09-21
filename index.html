@@ -298,17 +298,23 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+content: "";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "\e258";
-font-family: 'Glyphicons Halflings';
+content: "";
 border: none;
+}
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "";
+font-family: 'Glyphicons Halflings';
+display: inline-block;
+padding: 10px;
+border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -360,11 +366,12 @@ display: none;
 <div id="avisos" class="section level3">
 <h3>Avisos:</h3>
 <ul>
-<li>Última atualização do site às <strong>11:43</strong> do dia
-<strong>05/09/2024</strong>.</li>
+<li>Última atualização do site às <strong>12:45</strong> do dia
+<strong>21/09/2024</strong>.</li>
 <li>Monitores: Georgiano e Edimar</li>
 <li><a href="https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu">Whatsapp
 da disciplina</a></li>
+<li><strong>Prova 2: 9/10/24</strong></li>
 </ul>
 </div>
 <div id="ementa" class="section level3">
@@ -398,8 +405,17 @@ geração de variáveis aleatórias.</p></li>
 <li><p><a href="aulas/aula8.html">Aula 8</a>: método de Monte
 Carlo.</p></li>
 <li><p>Aula 9: método de Monte Carlo em inferência.</p></li>
-<li><p>Aula 10: métodos de reamostragem: bootstrap.</p></li>
-<li><p>Aula 11: métodos de reamostragem: jackknife.</p></li>
+<li><p>Lista 3: capítulos 6 e 7 do livro da Maria Rizzo.</p></li>
+<li><p>Aula 10: métodos de reamostragem: bootstrap. Motivação para usar
+bootstrap. População, amostra, parâmetro, estimador, estimativa pontual
+e intervalar. Bootstrap não paramétrico. Exemplo de bootstrap para
+média. Intervalo de confiança percentil. Exemplo de bootstrap para
+correlação.</p></li>
+<li><p>Lista 4: capítulos 8 e 9 do livro da Maria Rizzo.</p></li>
+<li><p>Aula 11: métodos de reamostragem: um pouco mais sobre bootstrap e
+jackknife.</p></li>
+<li><p>Aula 12: exercícios sobre bootstrap e jackknife.</p></li>
+<li><p>Aula 13: métodos de otimização numérica.</p></li>
 </ul>
 </div>
 <div id="avaliação" class="section level3">
