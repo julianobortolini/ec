@@ -15,7 +15,7 @@ output: html_document
 - Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
 - Monitores: Georgiano e Edimar
 - [Whatsapp da disciplina](https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu)
-
+- **Prova 2: 9/10/24**
 
 
 ### Ementa:
@@ -48,9 +48,15 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 
 - Aula 9: método de Monte Carlo em inferência.
 
-- Aula 10: métodos de reamostragem: bootstrap.
+- Aula 10: métodos de reamostragem: bootstrap. Motivação para usar bootstrap. População, amostra, parâmetro, estimador, estimativa pontual e intervalar. Bootstrap não paramétrico. Exemplo de bootstrap para média. Intervalo de confiança percentil. Exemplo de bootstrap para correlação.
 
-- Aula 11: métodos de reamostragem: jackknife.
+- Aula 11: métodos de reamostragem: um pouco mais sobre bootstrap e jackknife.
+
+- Aula 12: exercícios sobre bootstrap e jackknife.
+
+- Aula 13: métodos de otimização numérica.
+
+
 
 
 
