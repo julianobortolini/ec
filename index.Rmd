@@ -14,8 +14,8 @@ output: html_document
 
 - Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
 - Monitores: Georgiano e Edimar
-- [Whatsapp da disciplina](https://chat.whatsapp.com/JscCZcwiofNKG0dwtRCPXu)
-- **Prova 2: 9/10/24**
+- [Whatsapp da disciplina]()
+- **Notas e frequências disponíveis no Portal do Aluno**
 
 
 ### Ementa:
@@ -58,8 +58,11 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 
 - Aula 12: exercícios sobre bootstrap e jackknife.
 
-- Aula 13: métodos de otimização numérica.
+- Aula 13: prova 2.
 
+- Aula 14: participação na semana da estatística.
+
+- Aula 15: métodos de otimização numérica.
 
 
 
