@@ -15,7 +15,7 @@ output: html_document
 - Última atualização do site às **`r format(Sys.time(), "%H:%M")`** do dia **`r format(Sys.time(), "%d/%m/%Y")`**.
 - Monitores: Georgiano e Edimar
 - [Whatsapp da disciplina]()
-- **Notas e frequências disponíveis no Portal do Aluno**
+- **Notas e frequências disponíveis no [portal acadêmico](https://sistemas.ufmt.br/ufmt.portalsistemas).**
 
 
 ### Ementa:
@@ -63,6 +63,8 @@ Geração de realizações de variáveis aleatórias uniformes. Geração de rea
 - Aula 14: participação na semana da estatística.
 
 - Aula 15: métodos de otimização numérica.
+
+- Aula 16: comentários sobre estatística computacional e encerramento da disciplina.
 
 
 
